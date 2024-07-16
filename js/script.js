@@ -30,14 +30,19 @@ couplesButton.addEventListener('click', () => {
 });
 
 nextButton.addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % questions.length;
+    let previousIndex = currentIndex;
+    do {
+        currentIndex = Math.floor(Math.random() * questions.length);
+    } while (currentIndex === previousIndex);
     questionBox.textContent = questions[currentIndex];
 });
+
 
 function startGame() {
     startupScreen.style.display = 'none';
     questionBox.style.display = 'block';
-    nextButton.style.display = 'block';
+    nextButton.style.display = 'flex';
+    nextButton.style.justifyContent = 'space-between';
     currentIndex = -1;
     questionBox.textContent = 'Click "Next Question" to start';
 }

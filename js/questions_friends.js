@@ -8,5 +8,15 @@ export const questions = [
     "If we could go on a trip anywhere in the world, where would you want to go?",
     "What's your go-to song when you're in a great mood?",
     "What's a funny memory that always makes you laugh when you think about it?",
-    "What's one thing you appreciate most about our friendship?"
+    "What's one thing you appreciate most about our friendship?",
+    "What's one sign that you would probably stay friends with someone for life?",
+    "What's the easiest way to break your trust?",
+    "What's something about your life now that you would miss when you're eighty?",
+    "Which day in your life do you wish you could erase from history?",
+    "In what ways are you privileged?",
+    "What's a common trait shared by everyone you've dated?",
+    "Given the chance, what would your worst enemy want to tattoo on your back?",
+    "What would your ten-year-old self think of your present self?",
+    "If your life were a video game, which level would be the most difficult to get through?",
+
 ];
