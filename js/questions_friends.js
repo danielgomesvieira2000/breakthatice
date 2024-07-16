@@ -18,5 +18,17 @@ export const questions = [
     "Given the chance, what would your worst enemy want to tattoo on your back?",
     "What would your ten-year-old self think of your present self?",
     "If your life were a video game, which level would be the most difficult to get through?",
-
+    "If you had to come up with a new class that everyone was required to take in school, what would it be?",
+    "What's a character trait you hope you'd never pass down to your kids?",
+    "What is one underrated quality you find attractive in a person?",
+    "It's your final twenty-four hours on earth. You're in great shape and have unlimited funds. What do you do?",
+    "How would you spend your time if you turned invisible for a week?",
+    "When was the last time someone saw you cry?",
+    "Have you ever felt differently about a person after you had dreamt about them?",
+    "Who are the people most likely to thank you in their speech if they ever won an award?",
+    "What's one thing your exes probably miss about you?",
+    "Do you believe chemistry is inherent or is it something you can develop over time?",
+    "When did you first learn about race and how did that change the way you saw people?",
+    "If you could give your parents advice on how to raise you, what would you tell them?",
+    "If all your exes got together, what's one complaint they would all agree on?"
 ];

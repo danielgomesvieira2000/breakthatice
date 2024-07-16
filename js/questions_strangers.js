@@ -30,5 +30,12 @@ export const questions = [
     "What superpowers are probably more inconvenient than they are useful?",
     "If you became a leader of a country, what would the press say about you?",
     "In your biography, which chapters would you ask your parents to skip?",
-
+    "Imagine we had to start over on Mars and you were responsible for choosing who gets to be part of Humanity 2.0. How would you decide on who to accept?",
+    "When was the last time you laughed uncontrollably?",
+    "Come up with a new Olympic sport in which you would definitely win a gold medal.",
+    "How would you change the way society punishes criminals?",
+    "If a museum had an exhibit about you, what items would they put on display?",
+    "Describe a moment that made you feel like a real grown-up.",
+    "If you didn't have to sleep every night, what would you do with all that extra time?",
+    "What's something you could do five years ago that you can't do today?",
 ];
