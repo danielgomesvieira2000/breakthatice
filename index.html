@@ -9,8 +9,14 @@
 <body>
 <div class="container">
     <h1>Break that Ice</h1>
-    <div class="question-box" id="questionBox">Click "Next Question" to start</div>
-    <button id="nextButton">Next Question</button>
+    <div id="startupScreen" class="startup-screen">
+        <p>Who's playing?</p>
+        <button id="strangersButton">Strangers</button>
+        <button id="friendsButton">Friends</button>
+        <button id="couplesButton">Couples</button>
+    </div>
+    <div class="question-box" id="questionBox" style="display: none;">Click "Next Question" to start</div>
+    <button id="nextButton" style="display: none;">Next Question</button>
 </div>
 <script type="module" src="js/script.js"></script>
 </body>
