@@ -64,8 +64,7 @@ h1 {
     min-height: 100px;
     height: 200px; /* Set a fixed height */
     width: 100%; /* Ensure it takes the full container width */
-    max-width: 560px; /* Optional: max width to prevent overflow */
-    min-width: 560px;
+    max-width: 500px; /* Optional: max width to prevent overflow */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -107,8 +106,9 @@ h1 {
     .question-box {
         font-size: 1.2rem;
         padding: 15px;
-        height: 120px; /* Adjust fixed height for smaller screens */
+        height: auto; /* Adjust height for smaller screens */
         max-width: 100%;
+        min-width: unset; /* Allow width to adjust on smaller screens */
     }
 
     .startup-screen button, #nextButton {
