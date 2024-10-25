@@ -1,32 +1,23 @@
 let currentIndex = -1;
 let questions = [];
+let packs = ['strangers', 'friends', 'couples'];
 
 const questionBox = document.getElementById('questionBox');
 const nextButton = document.getElementById('nextButton');
 const startupScreen = document.getElementById('startupScreen');
-const strangersButton = document.getElementById('strangersButton');
-const friendsButton = document.getElementById('friendsButton');
-const couplesButton = document.getElementById('couplesButton');
 
-strangersButton.addEventListener('click', () => {
-    import('./questions_strangers.js').then(module => {
-        questions = module.questions;
-        startGame();
+packs.forEach(pack => {
+    const button = document.createElement('button');
+    button.textContent = pack.charAt(0).toUpperCase() + pack.slice(1);
+    button.addEventListener('click', () => {
+        import(`./questions_${pack}.js`).then(module => {
+            questions = module.questions;
+            startGame();
+        }).catch(error => {
+            console.error(`Failed to load questions for ${pack}:`, error);
+        });
     });
-});
-
-friendsButton.addEventListener('click', () => {
-    import('./questions_friends.js').then(module => {
-        questions = module.questions;
-        startGame();
-    });
-});
-
-couplesButton.addEventListener('click', () => {
-    import('./questions_couples.js').then(module => {
-        questions = module.questions;
-        startGame();
-    });
+    startupScreen.appendChild(button);
 });
 
 nextButton.addEventListener('click', () => {
@@ -36,7 +27,6 @@ nextButton.addEventListener('click', () => {
     } while (currentIndex === previousIndex);
     questionBox.textContent = questions[currentIndex];
 });
-
 
 function startGame() {
     startupScreen.style.display = 'none';
