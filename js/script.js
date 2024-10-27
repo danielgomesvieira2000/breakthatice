@@ -13,7 +13,7 @@ const startupScreen = document.getElementById('startupScreen');
 
 packs.forEach((pack, index) => {
     const card = document.createElement('div');
-    card.className = 'col-12 col-sm-6 col-md-4 mb-4'; // Responsive columns with margin-bottom for spacing
+    card.className = 'col-12 col-sm-6 col-md-4 mb-4';
     card.innerHTML = `
         <div class="card h-100" style="max-width: 16rem;"> <!-- Limit card width -->
             <img src="/media/pack_thumbnails/thumb_${pack}.png" class="card-img-top" alt="${pack}">
@@ -31,19 +31,3 @@ packs.forEach((pack, index) => {
 
     startupScreen.appendChild(card);
 });
-
-nextButton.addEventListener('click', () => {
-    let previousIndex = currentIndex;
-    do {
-        currentIndex = Math.floor(Math.random() * questions.length);
-    } while (currentIndex === previousIndex);
-    questionBox.textContent = questions[currentIndex];
-});
-
-function startGame() {
-    startupScreen.style.display = 'none';
-    questionBox.style.display = 'block';
-    nextButton.style.display = 'flex';
-    currentIndex = -1;
-    questionBox.textContent = 'Click "Next Question" to start';
-}
