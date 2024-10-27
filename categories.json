@@ -1,0 +1,31 @@
+{
+    "Conversation Starters": {
+      "Strangers": {
+        "description": "Get to know new people better with these ice-breakers."
+      },
+      "Friends": {
+        "description": "Deepen friendships with thoughtful questions."
+      },
+      "Couples": {
+        "description": "Fun and insightful questions for couples."
+      }
+    },
+    "Party Games": {
+      "Don’t get me started": {
+        "description": "Improvise a rant about a random topic."
+      },
+      "Think About it": {
+        "description": "Improvise a conspiracy theory about a random topic."
+      },
+      "Illuminati": {
+        "description": "Connect two random topics with an improvised conspiracy theory."
+      },
+      "World’s greatest Expert": {
+        "description": "Give a made-up lecture about a random topic."
+      },
+      "Ah Yes": {
+        "description": "Improvise a history lesson about a random art piece."
+      }
+    }
+  }
+  
