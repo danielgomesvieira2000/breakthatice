@@ -1,0 +1,45 @@
+.questionfield {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+#questionBox {
+    font-size: 1.2rem;
+    padding: 20px;
+    background: #e3f2fd;
+    border: 2px solid #0077cc;
+    border-radius: 8px;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#nextButton {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: #0077cc;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#nextButton:hover {
+    background: #005fa3;
+}
