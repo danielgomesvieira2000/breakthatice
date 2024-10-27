@@ -11,9 +11,9 @@ fetch('/categories.json')
 
       for (const [pack, details] of Object.entries(packs)) {
         const card = document.createElement('div');
-        card.className = 'col-12 col-sm-6 col-md-4 mb-4';
+        card.className = 'col-12 col-sm-6 col-md-2 mb-4';
         card.innerHTML = `
-          <div class="card h-100" style="max-width: 16rem;">
+          <div class="card h-100">
             <img src="/media/pack_thumbnails/thumb_${pack.toLowerCase().replace(/\s+/g, '_')}.png" class="card-img-top" alt="${pack}">
             <div class="card-body">
               <h5 class="card-title">${pack}</h5>

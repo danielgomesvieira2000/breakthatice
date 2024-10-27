@@ -6,9 +6,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const category = urlParams.get('category');
 
     if (category) {
-        document.getElementById('categoryTitle').textContent = `${category.charAt(0).toUpperCase() + category.slice(1)} Questions`;
-
-        import(`./questions_${category}.js`).then(module => {
+        document.getElementById('categoryTitle').textContent = `${category.charAt(0).toUpperCase() + category.slice(1).replace(/_/g, ' ')}`;
+        const sanitizedCategory = category.replace(/[^a-zA-Z0-9_]/g, '');
+        import(`./questions_${sanitizedCategory}.js`).then(module => {
             questions = module.questions;
             setupQuestionBox();
         }).catch(error => {
