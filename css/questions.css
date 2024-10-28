@@ -43,3 +43,9 @@
 #nextButton:hover {
     background: #005fa3;
 }
+
+#backButton {
+    position: absolute; /* Position it absolutely */
+    top: 20px; /* Distance from the top */
+    left: 20px; /* Distance from the left */
+}

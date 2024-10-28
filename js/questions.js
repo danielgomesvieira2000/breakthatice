@@ -30,5 +30,9 @@ function setupQuestionBox() {
         questionBox.textContent = questions[currentIndex];
     });
 
+    backButton.addEventListener('click', () => {
+        window.location.href = '/index.html';
+    });
+
     questionBox.textContent = 'Click "Next" to start';
 }
