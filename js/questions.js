@@ -30,5 +30,5 @@ function setupQuestionBox() {
         questionBox.textContent = questions[currentIndex];
     });
 
-    questionBox.textContent = 'Click "Next Question" to start';
+    questionBox.textContent = 'Click "Next" to start';
 }

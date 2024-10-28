@@ -25,6 +25,9 @@
       },
       "Ah Yes": {
         "description": "Improvise a history lesson about a random art piece."
+      },
+      "Alternate Reality": {
+        "description": "Describe a 'what if' scenario where well-known events played out differently."
       }
     }
   }
